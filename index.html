@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body onload="makeGrid(16)">
+    <h1>Et<span>ch</span>-a-sk<span>et</span>ch</h1>
+    <div class="wrapper">
+      <div class="container"></div>
+      <div class="right">
+        <form onsubmit="makeGridForm(event)">
+          <label for="noOfTiles"> Size of Grid (0 to 100): </label>
+          <br />
+          <input
+            type="number"
+            min="0"
+            max="100"
+            name="noOfTiles"
+            id="noOfTiles"
+            value="16"
+          />
+          <br />
+          <button type="submit">Reset</button>
+          <br />
+          <button onclick="clearTiles()">Clear</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer">Copyright © | Muzammil Studios</div>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
